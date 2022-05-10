@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calories.MainPage">
+
+    <StackLayout BackgroundColor="#312c7c">
+        <Label Text="Calcula tus Calorias" FontSize="40" FontAttributes="Italic" HorizontalOptions="Center" TextColor="#a7b3ff" Margin="20"/>
+        <Frame VerticalOptions="FillAndExpand" Margin="10,20,10,20" CornerRadius="10" BackgroundColor="#a7b3ff" >
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="https://cdn-icons-png.flaticon.com/512/706/706195.png"/>
+                <Label Text="Género" TextColor="#732092"/>
+                <Label Text="1)Masculino  2)Femenino" TextColor="#732092"/>
+                <Entry Placeholder="Genero" x:Name="Genero" Keyboard="Numeric" PlaceholderColor="#b795ef"/>
+                <Label Text="Peso (Kg)" TextColor="#732092"/>
+                <Entry Placeholder="Peso"  x:Name="Peso" Keyboard="Numeric" PlaceholderColor="#b795ef"/>
+                <Label Text="Altura (cm)" TextColor="#732092"/>
+                <Entry Placeholder="Altura"  x:Name="Altura" Keyboard="Numeric" PlaceholderColor="#b795ef"/>
+                <Label Text="Edad (años)" TextColor="#732092"/>
+                <Entry Placeholder="Años"  x:Name="Años" Keyboard="Numeric" PlaceholderColor="#b795ef"/>
+                <Label Text="Calorias Diarias" TextColor="#732092"/>
+                <Entry Placeholder="Calorias"  x:Name="Calorias" IsEnabled="False" PlaceholderColor="#b795ef"/>
+                <Button Text="Calcular" Clicked="Button_Clicked" BackgroundColor="#d47dff" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
+
